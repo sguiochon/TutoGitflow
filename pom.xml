@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.axa</groupId>
+  <artifactId>tuto-sam</artifactId>
+  <version>1.0.0-m5-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+
+ <!--  <parent>
+       <groupId>fr.axa.pfel</groupId> 
+       <artifactId>pom-pfel</artifactId> 
+       <version>0.0.1</version> 
+    </parent>
+-->
+  <dependencies>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>fr.axa.tuto.HelloWorld</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m5.1</version>
+        <configuration>
+          <!-- see goals wiki page for configuration options -->
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+</project>
