@@ -35,6 +35,8 @@
         <artifactId>jgitflow-maven-plugin</artifactId>
         <version>1.0-m5.1</version>
         <configuration>
+		<username>sguiochon</username>
+		<password>Antimoine40!</password>
           <!-- see goals wiki page for configuration options -->
         </configuration>
       </plugin>
